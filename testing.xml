@@ -5,6 +5,11 @@
 	<parameter name="Browser" value="chrome"></parameter>
 	<parameter name="OS" value="windows"></parameter>
 	
+	<listeners>
+		<listener class-name="favbet.utilities.ExtentReporterNG"></listener>
+		<listener class-name="favbet.utilities.TestTransformer"></listener>
+	</listeners>
+	
 	<test thread-count="5" name="Test">
 		<classes>
 			<class name="favbet.testCases.LoginTest" />

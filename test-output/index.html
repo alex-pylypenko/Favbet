@@ -146,6 +146,10 @@
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;parameter name=&quot;OS&quot; value=&quot;windows&quot;/&gt;
   &lt;parameter name=&quot;Browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;favbet.utilities.ExtentReporterNG&quot;/&gt;
+    &lt;listener class-name=&quot;favbet.utilities.TestTransformer&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;favbet.testCases.LoginTest&quot;/&gt;
@@ -200,12 +204,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginTest')
 data.setCell(0, 2, 'favbet.testCases.LoginTest')
-data.setCell(0, 3, 637);
+data.setCell(0, 3, 542);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 637 ms</span>
+              <span class="suite-total-time">Total running time: 542 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -238,7 +242,7 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginTest(ManUtd, Manutd123, Invalid)</span>
-                <span class="method-start">3069 ms</span>
+                <span class="method-start">2251 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
