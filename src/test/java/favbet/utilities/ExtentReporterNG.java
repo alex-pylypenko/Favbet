@@ -35,15 +35,15 @@ public class ExtentReporterNG extends Base implements ITestListener{
 	sparkReporter=new ExtentSparkReporter(".\\reports\\"+reportName );  //location of the report
 	// title of the report
 	//name of the report 
-	sparkReporter.config().setReportName("Codenbox Web Test Summary");
+	sparkReporter.config().setReportName("Favbet Web Test Summary");
 	sparkReporter.config().setTheme(Theme.DARK); //select UI look or theme type
 	
 	// generate common info in to the report. Ex: application+module+tester+environment name, 
 	extent=new ExtentReports();
 	extent.attachReporter(sparkReporter);
-	extent.setSystemInfo("Application", "codenbox");
+	extent.setSystemInfo("Application", "favbet");
 	extent.setSystemInfo("Module", "Admin");
-	extent.setSystemInfo("Environment", "QA");
+	extent.setSystemInfo("Environment", "Production");
 	extent.setSystemInfo("User Name", System.getProperty("user.name"));
 	
 	//automatically get OS & Browser name from testNG xml file
