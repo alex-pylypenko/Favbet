@@ -1,0 +1,1 @@
+2025-08-28 14:41:45.394 [main] WARN  org.apache.poi.openxml4j.opc.OPCPackage - Unable to call close() on a package that hasn't been fully opened yet
