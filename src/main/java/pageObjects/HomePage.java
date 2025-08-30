@@ -18,6 +18,7 @@ public class HomePage extends BaseComponents {
 	// action methods
 	
 	public void clickLogin() {
+		waitForElementClickable(loginBtn); // explicit wait for specific elements
 		loginBtn.click();
 	}
 	

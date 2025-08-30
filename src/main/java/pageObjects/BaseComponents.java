@@ -3,7 +3,9 @@ package pageObjects;
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BaseComponents {
@@ -12,15 +14,17 @@ public class BaseComponents {
 	public WebDriverWait wait;
 	
 	public BaseComponents(WebDriver driver) {
-		this.driver = driver;
-		PageFactory.initElements(driver, this);
-	}
-	
-	public WebDriverWait getWait() {
-		if(wait == null) {
-			wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		}
-		return wait;
-	}
+        this.driver = driver;
+        PageFactory.initElements(driver, this);
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    }
+
+    protected void waitForElementVisible(WebElement element) {
+        wait.until(ExpectedConditions.visibilityOf(element));
+    }
+
+    protected void waitForElementClickable(WebElement element) {
+        wait.until(ExpectedConditions.elementToBeClickable(element));
+    }
 
 }

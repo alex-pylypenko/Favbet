@@ -12,7 +12,7 @@
 	
 	<test thread-count="5" name="Test">
 		<classes>
-			<class name="favbet.testCases.LoginTest" />
+			<class name="favbet.testCases.betInsufficientFundsTest" />
 		</classes>
 	</test> <!--
 	Test -->

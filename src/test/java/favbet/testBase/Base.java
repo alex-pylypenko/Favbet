@@ -1,7 +1,6 @@
 package favbet.testBase;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
 import java.time.Duration;
@@ -126,20 +125,6 @@ public class Base {
 					getDriver().manage().window().setSize(new Dimension(1440, 900));
 					break;
 				}
-
-				/*
-				 * switch (browserName.toLowerCase()) { case "chrome":
-				 * optionsChrome.addArguments("--incognito"); driver.set(new
-				 * ChromeDriver(optionsChrome)); break; case "chromeheadless":
-				 * optionsChrome.addArguments("headless"); driver.set(new
-				 * ChromeDriver(optionsChrome)); getDriver().manage().window().setSize(new
-				 * Dimension(1440, 900)); break; case "firefox": driver.set(new
-				 * FirefoxDriver()); break; case "firefoxheadless":
-				 * optFirefox.addArguments("--headless"); driver.set(new
-				 * FirefoxDriver(optFirefox)); getDriver().manage().window().setSize(new
-				 * Dimension(1440, 900)); break; default:
-				 * System.out.println("There is no valid browser: " + browserName); return; }
-				 */
 			}
 
 			getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));

@@ -15,13 +15,26 @@ public class LoginPage extends BaseComponents {
 	@FindBy(xpath = "//input[@id = 'email']")
 	WebElement email;
 	
-	@FindBy(xpath = "//input[@id = 'email']")
+	@FindBy(id = "password")
 	WebElement pass;
+	
+	@FindBy(css = "[data-role = 'login-page-submit-btn']")
+	WebElement loginBtn;
 	
 	// methods
 	
 	public void setEmail(String myEmail) {
+		email.clear();
 		email.sendKeys(myEmail);
+	}
+	
+	public void setPassword(String myPass) {
+		pass.clear();
+		pass.sendKeys(myPass);
+	}
+	
+	public void clickLoginBtn() {
+		loginBtn.click();
 	}
 
 }

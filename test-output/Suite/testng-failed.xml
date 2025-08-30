@@ -3,14 +3,18 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <parameter name="OS" value="windows"/>
   <parameter name="Browser" value="chrome"/>
+  <listeners>
+    <listener class-name="favbet.utilities.ExtentReporterNG"/>
+    <listener class-name="favbet.utilities.TestTransformer"/>
+  </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="favbet.testCases.LoginTest">
+      <class name="favbet.testCases.betInsufficientFundsTest">
         <methods>
           <include name="setUp"/>
-          <include name="loginTest"/>
+          <include name="betInsufficientFunds"/>
         </methods>
-      </class> <!-- favbet.testCases.LoginTest -->
+      </class> <!-- favbet.testCases.betInsufficientFundsTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
