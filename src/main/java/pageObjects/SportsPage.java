@@ -40,6 +40,9 @@ public class SportsPage extends BaseComponents {
 	@FindBy(xpath = "//div[@data-role = 'market-outcome']//div//span")
 	WebElement firstOddsValue;
 	
+	@FindBy(xpath = "//a[@href='/en/results/']")
+	WebElement resultsPage;
+	
 	// methods
 	
 	public void selectAnyOdd() {
@@ -80,6 +83,10 @@ public class SportsPage extends BaseComponents {
 
         return Math.abs(possibleWinningsNum - expected) < epsilon;
 		
+	}
+	
+	public void navigateToResults() {
+		resultsPage.click();
 	}
 
 }

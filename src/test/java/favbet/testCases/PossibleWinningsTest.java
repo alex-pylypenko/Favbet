@@ -1,6 +1,5 @@
 package favbet.testCases;
 
-import org.openqa.selenium.NoSuchElementException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -39,7 +38,7 @@ public class PossibleWinningsTest extends Base {
 		sports.setStake(Double.parseDouble(stakeValue));
 		
 		boolean result = sports.checkPossibleWinnings();
-        Assert.assertTrue(result, "❌ Possible winnings are not calculated correctly!");
+        Assert.assertTrue(result, "Possible winnings are not calculated correctly!");
 		
 	}
 

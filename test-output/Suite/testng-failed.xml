@@ -14,12 +14,12 @@
       </run>
     </groups>
     <classes>
-      <class name="favbet.testCases.PossibleWinningsTest">
+      <class name="favbet.testCases.ResultsSearchTest">
         <methods>
           <include name="setUp"/>
-          <include name="pissibleWinningsAmount"/>
+          <include name="SearchResults"/>
         </methods>
-      </class> <!-- favbet.testCases.PossibleWinningsTest -->
+      </class> <!-- favbet.testCases.ResultsSearchTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

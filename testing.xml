@@ -18,7 +18,8 @@
 	<test thread-count="5" name="Test">
 		<classes>
 			<!-- <class name="favbet.testCases.betInsufficientFundsTest" /> -->
-			<class name="favbet.testCases.PossibleWinningsTest" />
+			<!-- <class name="favbet.testCases.PossibleWinningsTest" /> -->
+			<class name="favbet.testCases.ResultsSearchTest" />
 		</classes>
 	</test> <!--
 	Test -->
