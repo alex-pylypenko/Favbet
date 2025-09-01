@@ -8,13 +8,18 @@
     <listener class-name="favbet.utilities.TestTransformer"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="Regression"/>
+      </run>
+    </groups>
     <classes>
-      <class name="favbet.testCases.betInsufficientFundsTest">
+      <class name="favbet.testCases.PossibleWinningsTest">
         <methods>
           <include name="setUp"/>
-          <include name="betInsufficientFunds"/>
+          <include name="pissibleWinningsAmount"/>
         </methods>
-      </class> <!-- favbet.testCases.betInsufficientFundsTest -->
+      </class> <!-- favbet.testCases.PossibleWinningsTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,1 +1,27 @@
 2025-08-28 14:41:45.394 [main] WARN  org.apache.poi.openxml4j.opc.OPCPackage - Unable to call close() on a package that hasn't been fully opened yet
+2025-08-31 07:36:54.574 [main] INFO  favbet.testCases.betInsufficientFundsTest - --- Place bet test started ---
+2025-08-31 07:48:58.235 [main] INFO  favbet.testCases.betInsufficientFundsTest - --- Place bet test started ---
+2025-08-31 07:55:22.203 [main] INFO  favbet.testCases.betInsufficientFundsTest - --- Place bet test started ---
+2025-08-31 08:56:54.376 [main] INFO  favbet.testCases.betInsufficientFundsTest - --- Place bet test started ---
+2025-08-31 09:01:28.374 [main] INFO  favbet.testCases.PossibleWinningsTest - --- Calculation of possible winnings test started ---
+2025-08-31 10:28:54.911 [main] INFO  favbet.testCases.PossibleWinningsTest - --- Calculation of possible winnings test started ---
+2025-08-31 10:31:32.961 [main] INFO  favbet.testCases.PossibleWinningsTest - --- Calculation of possible winnings test started ---
+2025-08-31 10:39:29.402 [main] INFO  favbet.testCases.PossibleWinningsTest - --- Calculation of possible winnings test started ---
+2025-08-31 10:57:50.034 [main] INFO  favbet.testCases.PossibleWinningsTest - --- Calculation of possible winnings test started ---
+2025-08-31 10:59:03.090 [main] INFO  favbet.testCases.PossibleWinningsTest - --- Calculation of possible winnings test started ---
+2025-08-31 11:06:39.579 [main] INFO  favbet.testCases.PossibleWinningsTest - --- Calculation of possible winnings test started ---
+2025-08-31 11:06:52.418 [main] INFO  favbet.testCases.PossibleWinningsTest - --- Calculation of possible winnings test started ---
+2025-08-31 11:06:56.818 [main] INFO  favbet.testCases.PossibleWinningsTest - --- Calculation of possible winnings test started ---
+2025-08-31 11:07:09.758 [main] INFO  favbet.testCases.PossibleWinningsTest - --- Calculation of possible winnings test started ---
+2025-08-31 11:07:17.303 [main] INFO  favbet.testCases.PossibleWinningsTest - --- Calculation of possible winnings test started ---
+2025-08-31 11:07:32.967 [main] INFO  favbet.testCases.PossibleWinningsTest - --- Calculation of possible winnings test started ---
+2025-08-31 11:14:55.456 [main] INFO  favbet.testCases.PossibleWinningsTest - --- Calculation of possible winnings test started ---
+2025-08-31 11:15:56.722 [main] INFO  favbet.testCases.PossibleWinningsTest - --- Calculation of possible winnings test started ---
+2025-08-31 17:57:04.250 [main] INFO  favbet.testCases.PossibleWinningsTest - --- Calculation of possible winnings test started ---
+2025-08-31 17:57:12.040 [main] INFO  favbet.testCases.PossibleWinningsTest - --- Calculation of possible winnings test started ---
+2025-08-31 17:57:27.645 [main] INFO  favbet.testCases.PossibleWinningsTest - --- Calculation of possible winnings test started ---
+2025-08-31 17:58:10.890 [main] INFO  favbet.testCases.PossibleWinningsTest - --- Calculation of possible winnings test started ---
+2025-08-31 17:58:24.981 [main] INFO  favbet.testCases.PossibleWinningsTest - --- Calculation of possible winnings test started ---
+2025-08-31 17:58:40.653 [main] INFO  favbet.testCases.PossibleWinningsTest - --- Calculation of possible winnings test started ---
+2025-08-31 18:01:40.002 [main] INFO  favbet.testCases.PossibleWinningsTest - --- Calculation of possible winnings test started ---
+2025-09-01 09:07:03.674 [main] INFO  favbet.testCases.PossibleWinningsTest - --- Calculation of possible winnings test started ---

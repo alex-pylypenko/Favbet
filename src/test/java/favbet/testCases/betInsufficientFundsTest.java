@@ -11,8 +11,10 @@ import pageObjects.SportsPage;
 
 public class betInsufficientFundsTest extends Base {
 	
-	@Test
+	@Test(groups = {"Regression"})
 	public void betInsufficientFunds() {
+		
+		logger.info("--- Place bet test started ---");
 		
 		HomePage hm = new HomePage(driver.get());	
 		hm.clickLogin();
@@ -30,8 +32,10 @@ public class betInsufficientFundsTest extends Base {
 		
 		SportsPage sports = new SportsPage(driver.get());;
 		sports.selectAnyOdd();
-		sports.setStake(100);
-		//sports.clickDepBetslipBtn();
+		
+		String stakeValue = prop.getProperty("stake");
+		sports.setStake(Double.parseDouble(stakeValue));
+		sports.clickDepBetslipBtn();
 	}
 
 }

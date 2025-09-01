@@ -34,6 +34,12 @@ public class SportsPage extends BaseComponents {
 	@FindBy(xpath = "//button[@data-role='betslip-button-additional-info']")
 	WebElement depositBetslipBtn;
 	
+	@FindBy(xpath = "//button[@data-role='betslip-button-additional-info']//span[@data-role='betslip-possible-win-numbers']//span//span[1]")
+	WebElement possibleWinnings;
+	
+	@FindBy(xpath = "//div[@data-role = 'market-outcome']//div//span")
+	WebElement firstOddsValue;
+	
 	// methods
 	
 	public void selectAnyOdd() {
@@ -62,5 +68,18 @@ public class SportsPage extends BaseComponents {
 	public void clickDepBetslipBtn() {
 		depositBetslipBtn.click();
 	}
-	// comment
+	
+	public boolean checkPossibleWinnings() {
+		
+		Double possibleWinningsNum = Double.parseDouble(possibleWinnings.getText());	
+		Double firstOddsValueNum = Double.parseDouble(firstOddsValue.getText());	
+		Double actualStakeNum = Double.parseDouble(enterStake.getAttribute("value"));
+		
+		double expected = firstOddsValueNum * actualStakeNum;
+        double epsilon = 0.01;
+
+        return Math.abs(possibleWinningsNum - expected) < epsilon;
+		
+	}
+
 }

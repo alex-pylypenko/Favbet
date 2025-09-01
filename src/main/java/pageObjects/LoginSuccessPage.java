@@ -1,5 +1,6 @@
 package pageObjects;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -29,7 +30,11 @@ public class LoginSuccessPage extends BaseComponents {
 	}
 	
 	public void closeVerify() {
-		close.click();
+		try {
+			close.click();
+		} catch(NoSuchElementException e) {
+			System.out.println("No close varify email element is found");
+		}
 	}
 
 }
