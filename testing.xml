@@ -15,7 +15,7 @@
 		<listener class-name="favbet.utilities.TestTransformer"></listener>
 	</listeners>
 	
-	<test thread-count="5" name="Chrome Tests123">
+	<test thread-count="5" name="Chrome Tests">
 		<parameter name="Browser" value="chrome"></parameter>
 		<parameter name="OS" value="windows"></parameter>
 		<classes>
