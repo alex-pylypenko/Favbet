@@ -135,11 +135,11 @@ public class Base {
 		}
 	}
 	
-//	@AfterMethod(alwaysRun = true)
-//	public void tearDown() {
-//		if (getDriver() != null) {
-//			getDriver().quit();
-//			driver.remove();
-//		}
-//	}
+	@AfterMethod(alwaysRun = true)
+	public void tearDown() {
+		if (getDriver() != null) {
+			getDriver().quit();
+			driver.remove();
+		}
+	}
 }
