@@ -10,22 +10,21 @@ import pageObjects.LoginPage;
 import pageObjects.LoginSuccessPage;
 
 public class LoginTest extends Base {
-	
-	@Test(dataProvider = "LoginData", dataProviderClass = DataProviders.class, groups = {"Regression"})
+
+	@Test(dataProvider = "LoginData", dataProviderClass = DataProviders.class, groups = { "Regression" })
 	public void loginTest(String userName, String password, String result) throws InterruptedException {
 		HomePage hm = new HomePage(driver.get());
-		
-		//Thread.sleep(2000l);
+
 		hm.clickLogin();
-		
+
 		LoginPage login = new LoginPage(driver.get());
 		login.setEmail(userName);
 		login.setPassword(password);
 		login.clickLoginBtn();
-		
+
 		LoginSuccessPage logSuccess = new LoginSuccessPage(driver.get());
 		String actLog = logSuccess.verifiedLogin();
-		
+
 		if (result.equalsIgnoreCase("Invalid") && actLog.equalsIgnoreCase("Deposit")) {
 			Assert.assertTrue(false);
 		}
@@ -41,7 +40,7 @@ public class LoginTest extends Base {
 		if (result.equalsIgnoreCase("Valid") && !actLog.equalsIgnoreCase("Deposit")) {
 			Assert.assertTrue(false);
 		}
-		
+
 	}
 
 }

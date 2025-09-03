@@ -7,7 +7,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class Retry implements IRetryAnalyzer {
 
-    private static final int retryLimit = 2;
+    private static final int retryLimit = 1;
     private static ConcurrentHashMap<String, Integer> retryCounts = new ConcurrentHashMap<>();
 
     @Override

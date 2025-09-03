@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-02T08:51:12 EEST" name="Suite" finished-at="2025-09-02T08:52:00 EEST" duration-ms="48797">
+  <suite started-at="2025-09-03T12:14:51 EEST" name="Suite" finished-at="2025-09-03T12:15:51 EEST" duration-ms="60119">
     <groups>
       <group name="Regression">
         <method signature="LoginTest.loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:favbet.testCases.LoginTest@16ce702d]" name="loginTest" class="favbet.testCases.LoginTest"/>
         <method signature="PossibleWinningsTest.pissibleWinningsAmount()[pri:0, instance:favbet.testCases.PossibleWinningsTest@4f25b795]" name="pissibleWinningsAmount" class="favbet.testCases.PossibleWinningsTest"/>
         <method signature="ResultsSearchTest.SearchResults()[pri:0, instance:favbet.testCases.ResultsSearchTest@6fb365ed]" name="SearchResults" class="favbet.testCases.ResultsSearchTest"/>
         <method signature="betInsufficientFundsTest.betInsufficientFunds()[pri:0, instance:favbet.testCases.betInsufficientFundsTest@3549bca9]" name="betInsufficientFunds" class="favbet.testCases.betInsufficientFundsTest"/>
+        <method signature="SearchTest.Search()[pri:0, instance:favbet.testCases.SearchTest@4879dfad]" name="Search" class="favbet.testCases.SearchTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2025-09-02T08:51:12 EEST" name="Chrome Tests" finished-at="2025-09-02T08:52:00 EEST" duration-ms="48797">
+    <test started-at="2025-09-03T12:14:51 EEST" name="Chrome Tests" finished-at="2025-09-03T12:15:43 EEST" duration-ms="51511">
       <class name="favbet.testCases.LoginTest">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:favbet.testCases.LoginTest@16ce702d]" started-at="2025-09-02T08:51:12 EEST" name="setUp" finished-at="2025-09-02T08:51:15 EEST" duration-ms="2560" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:favbet.testCases.LoginTest@16ce702d]" started-at="2025-09-03T12:14:52 EEST" name="setUp" finished-at="2025-09-03T12:14:54 EEST" duration-ms="2440" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,7 +30,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:favbet.testCases.LoginTest@16ce702d]" started-at="2025-09-02T08:51:15 EEST" name="loginTest" data-provider="LoginData" finished-at="2025-09-02T08:51:21 EEST" duration-ms="6231" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:favbet.testCases.LoginTest@16ce702d]" started-at="2025-09-03T12:14:54 EEST" name="loginTest" data-provider="LoginData" finished-at="2025-09-03T12:15:01 EEST" duration-ms="6489" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -50,11 +51,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:favbet.testCases.LoginTest@16ce702d]" started-at="2025-09-02T08:51:21 EEST" name="tearDown" finished-at="2025-09-02T08:51:21 EEST" duration-ms="141" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:favbet.testCases.LoginTest@16ce702d]" started-at="2025-09-03T12:15:01 EEST" name="tearDown" finished-at="2025-09-03T12:15:01 EEST" duration-ms="132" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:favbet.testCases.LoginTest@16ce702d]" started-at="2025-09-02T08:51:21 EEST" name="setUp" finished-at="2025-09-02T08:51:23 EEST" duration-ms="1979" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:favbet.testCases.LoginTest@16ce702d]" started-at="2025-09-03T12:15:01 EEST" name="setUp" finished-at="2025-09-03T12:15:03 EEST" duration-ms="2075" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -70,7 +71,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:favbet.testCases.LoginTest@16ce702d]" started-at="2025-09-02T08:51:23 EEST" name="loginTest" data-provider="LoginData" finished-at="2025-09-02T08:51:29 EEST" duration-ms="5951" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:favbet.testCases.LoginTest@16ce702d]" started-at="2025-09-03T12:15:03 EEST" name="loginTest" data-provider="LoginData" finished-at="2025-09-03T12:15:09 EEST" duration-ms="6113" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -91,11 +92,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:favbet.testCases.LoginTest@16ce702d]" started-at="2025-09-02T08:51:29 EEST" name="tearDown" finished-at="2025-09-02T08:51:29 EEST" duration-ms="134" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:favbet.testCases.LoginTest@16ce702d]" started-at="2025-09-03T12:15:09 EEST" name="tearDown" finished-at="2025-09-03T12:15:09 EEST" duration-ms="127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:favbet.testCases.LoginTest@16ce702d]" started-at="2025-09-02T08:51:29 EEST" name="setUp" finished-at="2025-09-02T08:51:32 EEST" duration-ms="2799" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:favbet.testCases.LoginTest@16ce702d]" started-at="2025-09-03T12:15:09 EEST" name="setUp" finished-at="2025-09-03T12:15:11 EEST" duration-ms="2106" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -111,7 +112,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:favbet.testCases.LoginTest@16ce702d]" started-at="2025-09-02T08:51:32 EEST" name="loginTest" data-provider="LoginData" finished-at="2025-09-02T08:51:35 EEST" duration-ms="3082" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:favbet.testCases.LoginTest@16ce702d]" started-at="2025-09-03T12:15:11 EEST" name="loginTest" data-provider="LoginData" finished-at="2025-09-03T12:15:16 EEST" duration-ms="4346" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -132,13 +133,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:favbet.testCases.LoginTest@16ce702d]" started-at="2025-09-02T08:51:35 EEST" name="tearDown" finished-at="2025-09-02T08:51:35 EEST" duration-ms="213" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:favbet.testCases.LoginTest@16ce702d]" started-at="2025-09-03T12:15:16 EEST" name="tearDown" finished-at="2025-09-03T12:15:16 EEST" duration-ms="174" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- favbet.testCases.LoginTest -->
       <class name="favbet.testCases.ResultsSearchTest">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:favbet.testCases.ResultsSearchTest@6fb365ed]" started-at="2025-09-02T08:51:55 EEST" name="setUp" finished-at="2025-09-02T08:51:57 EEST" duration-ms="1881" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:favbet.testCases.ResultsSearchTest@6fb365ed]" started-at="2025-09-03T12:15:36 EEST" name="setUp" finished-at="2025-09-03T12:15:38 EEST" duration-ms="1998" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -154,17 +155,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="SearchResults()[pri:0, instance:favbet.testCases.ResultsSearchTest@6fb365ed]" started-at="2025-09-02T08:51:57 EEST" name="SearchResults" finished-at="2025-09-02T08:52:00 EEST" duration-ms="3049" status="PASS">
+        <test-method signature="SearchResults()[pri:0, instance:favbet.testCases.ResultsSearchTest@6fb365ed]" started-at="2025-09-03T12:15:38 EEST" name="SearchResults" finished-at="2025-09-03T12:15:43 EEST" duration-ms="4347" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchResults -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:favbet.testCases.ResultsSearchTest@6fb365ed]" started-at="2025-09-02T08:52:00 EEST" name="tearDown" finished-at="2025-09-02T08:52:00 EEST" duration-ms="111" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:favbet.testCases.ResultsSearchTest@6fb365ed]" started-at="2025-09-03T12:15:43 EEST" name="tearDown" finished-at="2025-09-03T12:15:43 EEST" duration-ms="132" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- favbet.testCases.ResultsSearchTest -->
       <class name="favbet.testCases.PossibleWinningsTest">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:favbet.testCases.PossibleWinningsTest@4f25b795]" started-at="2025-09-02T08:51:45 EEST" name="setUp" finished-at="2025-09-02T08:51:47 EEST" duration-ms="1995" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:favbet.testCases.PossibleWinningsTest@4f25b795]" started-at="2025-09-03T12:15:26 EEST" name="setUp" finished-at="2025-09-03T12:15:28 EEST" duration-ms="2088" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -180,17 +181,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="pissibleWinningsAmount()[pri:0, instance:favbet.testCases.PossibleWinningsTest@4f25b795]" started-at="2025-09-02T08:51:47 EEST" name="pissibleWinningsAmount" finished-at="2025-09-02T08:51:55 EEST" duration-ms="8305" status="PASS">
+        <test-method signature="pissibleWinningsAmount()[pri:0, instance:favbet.testCases.PossibleWinningsTest@4f25b795]" started-at="2025-09-03T12:15:28 EEST" name="pissibleWinningsAmount" finished-at="2025-09-03T12:15:36 EEST" duration-ms="8271" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pissibleWinningsAmount -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:favbet.testCases.PossibleWinningsTest@4f25b795]" started-at="2025-09-02T08:51:55 EEST" name="tearDown" finished-at="2025-09-02T08:51:55 EEST" duration-ms="117" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:favbet.testCases.PossibleWinningsTest@4f25b795]" started-at="2025-09-03T12:15:36 EEST" name="tearDown" finished-at="2025-09-03T12:15:36 EEST" duration-ms="123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- favbet.testCases.PossibleWinningsTest -->
       <class name="favbet.testCases.betInsufficientFundsTest">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:favbet.testCases.betInsufficientFundsTest@3549bca9]" started-at="2025-09-02T08:51:35 EEST" name="setUp" finished-at="2025-09-02T08:51:37 EEST" duration-ms="1946" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:favbet.testCases.betInsufficientFundsTest@3549bca9]" started-at="2025-09-03T12:15:16 EEST" name="setUp" finished-at="2025-09-03T12:15:18 EEST" duration-ms="1990" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -206,15 +207,43 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="betInsufficientFunds()[pri:0, instance:favbet.testCases.betInsufficientFundsTest@3549bca9]" started-at="2025-09-02T08:51:37 EEST" name="betInsufficientFunds" finished-at="2025-09-02T08:51:45 EEST" duration-ms="7567" status="PASS">
+        <test-method signature="betInsufficientFunds()[pri:0, instance:favbet.testCases.betInsufficientFundsTest@3549bca9]" started-at="2025-09-03T12:15:18 EEST" name="betInsufficientFunds" finished-at="2025-09-03T12:15:26 EEST" duration-ms="7750" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- betInsufficientFunds -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:favbet.testCases.betInsufficientFundsTest@3549bca9]" started-at="2025-09-02T08:51:45 EEST" name="tearDown" finished-at="2025-09-02T08:51:45 EEST" duration-ms="117" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:favbet.testCases.betInsufficientFundsTest@3549bca9]" started-at="2025-09-03T12:15:26 EEST" name="tearDown" finished-at="2025-09-03T12:15:26 EEST" duration-ms="125" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- favbet.testCases.betInsufficientFundsTest -->
     </test> <!-- Chrome Tests -->
+    <test started-at="2025-09-03T12:15:44 EEST" name="Firefox Tests" finished-at="2025-09-03T12:15:51 EEST" duration-ms="7714">
+      <class name="favbet.testCases.SearchTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:favbet.testCases.SearchTest@4879dfad]" started-at="2025-09-03T12:15:44 EEST" name="setUp" finished-at="2025-09-03T12:15:47 EEST" duration-ms="2991" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Search()[pri:0, instance:favbet.testCases.SearchTest@4879dfad]" started-at="2025-09-03T12:15:47 EEST" name="Search" finished-at="2025-09-03T12:15:51 EEST" duration-ms="3932" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:favbet.testCases.SearchTest@4879dfad]" started-at="2025-09-03T12:15:51 EEST" name="tearDown" finished-at="2025-09-03T12:15:51 EEST" duration-ms="787" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- favbet.testCases.SearchTest -->
+    </test> <!-- Firefox Tests -->
   </suite> <!-- Suite -->
 </testng-results>

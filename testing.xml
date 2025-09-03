@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="tests" thread-count="2">
+<suite name="Suite">
 	<groups>
 		<run>
 			<include name="Regression"></include>
@@ -15,7 +15,7 @@
 		<listener class-name="favbet.utilities.TestTransformer"></listener>
 	</listeners>
 	
-	<test thread-count="5" name="Chrome_Tests">
+	<test thread-count="5" name="Chrome Tests">
 		<parameter name="Browser" value="chrome"></parameter>
 		<parameter name="OS" value="windows"></parameter>
 		<classes>
@@ -23,19 +23,21 @@
 			<class name="favbet.testCases.betInsufficientFundsTest" />
 			<class name="favbet.testCases.PossibleWinningsTest" />
 			<class name="favbet.testCases.ResultsSearchTest" />
+<!--			<class name="favbet.testCases.SearchTest" />-->
 		</classes>
 	</test>
 	
-<!--	<test thread-count="5" name="Firefox Tests">-->
-<!--		<parameter name="Browser" value="firefox"></parameter>-->
-<!--		<parameter name="OS" value="windows"></parameter>-->
-<!--		<classes>-->
+	<test thread-count="5" name="Firefox Tests">
+		<parameter name="Browser" value="firefox"></parameter>
+		<parameter name="OS" value="windows"></parameter>
+		<classes>
 <!--			<class name="favbet.testCases.LoginTest" />-->
 <!--			<class name="favbet.testCases.betInsufficientFundsTest" />-->
 <!--			<class name="favbet.testCases.PossibleWinningsTest" />-->
 <!--			<class name="favbet.testCases.ResultsSearchTest" />-->
-<!--		</classes>-->
-<!--	</test>-->
+			<class name="favbet.testCases.SearchTest" />
+		</classes>
+	</test>
 
 </suite> <!--
 Suite -->

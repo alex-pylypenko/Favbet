@@ -1,5 +1,7 @@
 package pageObjects;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -42,6 +44,13 @@ public class SportsPage extends BaseComponents {
 	
 	@FindBy(xpath = "//a[@href='/en/results/']")
 	WebElement resultsPage;
+	
+	@FindBy(xpath = ("//input[@placeholder='Search...']"))
+	WebElement search;
+	
+	@FindBy(xpath = "//div[@data-role='search-results-container']//div[2]//span")
+	WebElement searchedEvent;
+	
 	
 	// methods
 	
@@ -88,5 +97,35 @@ public class SportsPage extends BaseComponents {
 	public void navigateToResults() {
 		resultsPage.click();
 	}
+	
+	public void setSearch(String searchedWord) {
+		search.sendKeys(searchedWord);
+	}
+	
+	
+	String firstPartic;
+	String secondPartic;
+	public void saveParticipantsNames() {
+		String[] participants = searchedEvent.getText().split("-", 2);
+		firstPartic = participants[0].trim();
+		secondPartic = participants[1].trim();
+	}
+	
+	
+	public void clickSearchedEvent() {
+		waitForElementClickable(searchedEvent);
+		searchedEvent.click();
+	}
 
+	public boolean checkSearchedResult() {
+		boolean firstDisplayed = driver.findElement(By.xpath("//*[contains(text(),'" + firstPartic + "')]")).isDisplayed();
+		boolean secondDisplayed = driver.findElement(By.xpath("//*[contains(text(),'" + secondPartic + "')]")).isDisplayed();
+		
+		if(firstDisplayed && secondDisplayed) {
+			return true;
+		} else {
+			return false;
+		}
+		
+	}
 }

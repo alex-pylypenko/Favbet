@@ -6,3 +6,11 @@
 2025-09-02 08:48:21.929 [TestNG-tests-1] INFO  favbet.testCases.PossibleWinningsTest - --- Calculation of possible winnings test started ---
 2025-09-02 08:51:37.791 [TestNG-tests-1] INFO  favbet.testCases.betInsufficientFundsTest - --- Place bet test started ---
 2025-09-02 08:51:47.470 [TestNG-tests-1] INFO  favbet.testCases.PossibleWinningsTest - --- Calculation of possible winnings test started ---
+2025-09-03 11:33:59.918 [TestNG-tests-1] INFO  favbet.testCases.betInsufficientFundsTest - --- Place bet test started ---
+2025-09-03 11:34:09.276 [TestNG-tests-1] INFO  favbet.testCases.PossibleWinningsTest - --- Calculation of possible winnings test started ---
+2025-09-03 11:35:34.022 [main] INFO  favbet.testCases.betInsufficientFundsTest - --- Place bet test started ---
+2025-09-03 11:35:44.189 [main] INFO  favbet.testCases.PossibleWinningsTest - --- Calculation of possible winnings test started ---
+2025-09-03 11:37:16.992 [main] INFO  favbet.testCases.betInsufficientFundsTest - --- Place bet test started ---
+2025-09-03 11:37:46.869 [main] INFO  favbet.testCases.betInsufficientFundsTest - --- Place bet test started ---
+2025-09-03 12:15:18.348 [main] INFO  favbet.testCases.betInsufficientFundsTest - --- Place bet test started ---
+2025-09-03 12:15:28.309 [main] INFO  favbet.testCases.PossibleWinningsTest - --- Calculation of possible winnings test started ---

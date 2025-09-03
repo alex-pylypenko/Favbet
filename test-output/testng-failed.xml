@@ -1,33 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="favbet.utilities.ExtentReporterNG"/>
     <listener class-name="favbet.utilities.TestTransformer"/>
   </listeners>
-  <test thread-count="2" parallel="tests" name="Firefox Tests(failed)">
+  <test thread-count="5" name="Chrome Tests(failed)">
     <parameter name="OS" value="windows"/>
-    <parameter name="Browser" value="firefox"/>
+    <parameter name="Browser" value="chrome"/>
     <groups>
       <run>
         <include name="Regression"/>
       </run>
     </groups>
     <classes>
-      <class name="favbet.testCases.ResultsSearchTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="SearchResults"/>
-        </methods>
-      </class> <!-- favbet.testCases.ResultsSearchTest -->
       <class name="favbet.testCases.LoginTest">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="loginTest" invocation-numbers="2"/>
+          <include name="loginTest" invocation-numbers="1 2"/>
         </methods>
       </class> <!-- favbet.testCases.LoginTest -->
     </classes>
-  </test> <!-- Firefox Tests(failed) -->
+  </test> <!-- Chrome Tests(failed) -->
 </suite> <!-- Failed suite [Suite] -->
