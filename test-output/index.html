@@ -123,12 +123,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="favbet.testCases.LoginTest" class="method navigator-link" hash-for-method="loginTest(12.mjolnir@gmail.com, 123Qwe321, Valid)">loginTest(12.mjolnir@gmail.com, 123Qwe321, Valid)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="favbet.testCases.LoginTest" class="method navigator-link" hash-for-method="loginTest(RealMadrid, , Invalid)">loginTest(RealMadrid, , Invalid)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="favbet.testCases.LoginTest" class="method navigator-link" hash-for-method="loginTest(RealMadrid, , Invalid)">loginTest(RealMadrid, , Invalid)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="favbet.testCases.LoginTest" class="method navigator-link" hash-for-method="loginTest(12.mjolnir@gmail.com, 123Qwe321, Valid)">loginTest(12.mjolnir@gmail.com, 123Qwe321, Valid)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -209,18 +209,18 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest(12.mjolnir@gmail.com, 123Qwe321, Valid)">
-                  </a> <!-- loginTest(12.mjolnir@gmail.com, 123Qwe321, Valid) -->
-                  <span class="method-name">loginTest</span>
-                  <span class="parameters">(12.mjolnir@gmail.com,123Qwe321,Valid)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="loginTest(RealMadrid, , Invalid)">
                   </a> <!-- loginTest(RealMadrid, , Invalid) -->
                   <span class="method-name">loginTest</span>
                   <span class="parameters">(RealMadrid,,Invalid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(12.mjolnir@gmail.com, 123Qwe321, Valid)">
+                  </a> <!-- loginTest(12.mjolnir@gmail.com, 123Qwe321, Valid) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(12.mjolnir@gmail.com,123Qwe321,Valid)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -264,7 +264,7 @@
     &lt;listener class-name=&quot;favbet.utilities.ExtentReporterNG&quot;/&gt;
     &lt;listener class-name=&quot;favbet.utilities.TestTransformer&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Chrome Tests&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Chrome_Tests&quot;&gt;
     &lt;parameter name=&quot;OS&quot; value=&quot;windows&quot;/&gt;
     &lt;parameter name=&quot;Browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
@@ -273,14 +273,14 @@
       &lt;class name=&quot;favbet.testCases.PossibleWinningsTest&quot;/&gt;
       &lt;class name=&quot;favbet.testCases.ResultsSearchTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Chrome Tests --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Firefox Tests&quot;&gt;
+  &lt;/test&gt; &lt;!-- Chrome_Tests --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Firefox_Tests&quot;&gt;
     &lt;parameter name=&quot;OS&quot; value=&quot;windows&quot;/&gt;
     &lt;parameter name=&quot;Browser&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;favbet.testCases.SearchTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Firefox Tests --&gt;
+  &lt;/test&gt; &lt;!-- Firefox_Tests --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -292,10 +292,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Chrome Tests (4 classes)</span>
+                <span class="test-name">Chrome_Tests (4 classes)</span>
               </li>
               <li>
-                <span class="test-name">Firefox Tests (1 class)</span>
+                <span class="test-name">Firefox_Tests (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -347,38 +347,38 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'pissibleWinningsAmount')
-data.setCell(0, 2, 'favbet.testCases.PossibleWinningsTest')
-data.setCell(0, 3, 8271);
+data.setCell(0, 1, 'betInsufficientFunds')
+data.setCell(0, 2, 'favbet.testCases.betInsufficientFundsTest')
+data.setCell(0, 3, 10678);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'betInsufficientFunds')
-data.setCell(1, 2, 'favbet.testCases.betInsufficientFundsTest')
-data.setCell(1, 3, 7750);
+data.setCell(1, 1, 'pissibleWinningsAmount')
+data.setCell(1, 2, 'favbet.testCases.PossibleWinningsTest')
+data.setCell(1, 3, 6586);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'loginTest')
 data.setCell(2, 2, 'favbet.testCases.LoginTest')
-data.setCell(2, 3, 6489);
+data.setCell(2, 3, 6382);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'loginTest')
 data.setCell(3, 2, 'favbet.testCases.LoginTest')
-data.setCell(3, 3, 6113);
+data.setCell(3, 3, 6152);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'SearchResults')
 data.setCell(4, 2, 'favbet.testCases.ResultsSearchTest')
-data.setCell(4, 3, 4347);
+data.setCell(4, 3, 3961);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'loginTest')
-data.setCell(5, 2, 'favbet.testCases.LoginTest')
-data.setCell(5, 3, 4346);
+data.setCell(5, 1, 'Search')
+data.setCell(5, 2, 'favbet.testCases.SearchTest')
+data.setCell(5, 3, 3947);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'Search')
-data.setCell(6, 2, 'favbet.testCases.SearchTest')
-data.setCell(6, 3, 3932);
+data.setCell(6, 1, 'loginTest')
+data.setCell(6, 2, 'favbet.testCases.LoginTest')
+data.setCell(6, 3, 2713);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 41 seconds</span>
+              <span class="suite-total-time">Total running time: 40 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -411,95 +411,95 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginTest(ManUtd@qwe.com, Manutd123, Invalid)</span>
-                <span class="method-start">2441 ms</span>
+                <span class="method-start">2674 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">8941 ms</span>
+                <span class="method-start">9067 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome, windows)</span>
-                <span class="method-start">9074 ms</span>
+                <span class="method-start">9205 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginTest(RealMadrid, , Invalid)</span>
-                <span class="method-start">11149 ms</span>
+                <span class="method-start">11178 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">17264 ms</span>
+                <span class="method-start">17332 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome, windows)</span>
-                <span class="method-start">17392 ms</span>
+                <span class="method-start">17446 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginTest(12.mjolnir@gmail.com, 123Qwe321, Valid)</span>
-                <span class="method-start">19498 ms</span>
+                <span class="method-start">19445 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">23845 ms</span>
+                <span class="method-start">22159 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">favbet.testCases.betInsufficientFundsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome, windows)</span>
-                <span class="method-start">24022 ms</span>
+                <span class="method-start">22277 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">betInsufficientFunds</span>
-                <span class="method-start">26012 ms</span>
+                <span class="method-start">24230 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">33763 ms</span>
+                <span class="method-start">34909 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">favbet.testCases.PossibleWinningsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome, windows)</span>
-                <span class="method-start">33889 ms</span>
+                <span class="method-start">35016 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">pissibleWinningsAmount</span>
-                <span class="method-start">35977 ms</span>
+                <span class="method-start">36939 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">44249 ms</span>
+                <span class="method-start">43526 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">favbet.testCases.ResultsSearchTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome, windows)</span>
-                <span class="method-start">44373 ms</span>
+                <span class="method-start">43640 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">SearchResults</span>
-                <span class="method-start">46371 ms</span>
+                <span class="method-start">45571 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">50719 ms</span>
+                <span class="method-start">49533 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">favbet.testCases.SearchTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(firefox, windows)</span>
-                <span class="method-start">51749 ms</span>
+                <span class="method-start">50571 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Search</span>
-                <span class="method-start">54740 ms</span>
+                <span class="method-start">53360 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">58673 ms</span>
+                <span class="method-start">57308 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
